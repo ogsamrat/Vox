@@ -1,0 +1,39 @@
+asr:
+  model: "small"
+  device: "cpu"
+  compute_type: "int8"
+  language: "en"
+  beam_size: 5
+  vad_filter: true
+  download_root: "models/whisper"
+
+llm:
+  backend: "groq"
+  model: "llama-3.3-70b-versatile"
+  api_key: "YOUR_GROQ_API_KEY"
+  max_tokens: 4096
+  temperature: 0.1
+  top_p: 0.9
+
+diarization:
+  enabled: true
+  speaker_identification_method: "llm_based"
+
+pipeline:
+  enable_timestamps: true
+  enable_diarization: true
+  output_format: "json"
+
+streaming:
+  chunk_duration_seconds: 5
+  sample_rate: 16000
+  vad_aggressiveness: 3
+  context_window_seconds: 30
+
+metrics:
+  enabled: false
+  port: 8001
+
+logging:
+  level: "INFO"
+  file: "logs/vox.log"

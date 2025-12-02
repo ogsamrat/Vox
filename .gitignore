@@ -1,0 +1,115 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+env/
+.venv/
+ENV/
+env.bak/
+venv.bak/
+miniconda3/
+anaconda3/
+conda/
+
+# Pip
+pip-log.txt
+pip-delete-this-directory.txt
+pip-wheel-metadata/
+.pip_cache/
+pip_cache/
+
+# Environment
+.env
+.env.local
+*.local
+
+# Logs
+*.log
+logs/
+
+# Models and cache
+models/
+cache/
+.cache/
+*.pt
+*.bin
+*.safetensors
+*.onnx
+*.h5
+
+# Audio files
+*.wav
+*.mp3
+*.flac
+*.ogg
+*.m4a
+*.webm
+*.aac
+
+# Output folders
+outputs/
+results/
+uploads/
+temp/
+tmp/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+coverage.xml
+*.cover
+*.py,cover
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.project
+.pydevproject
+.settings/
+
+# OS
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+
+# Config with secrets
+config.local.yaml
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Node (if any)
+node_modules/
